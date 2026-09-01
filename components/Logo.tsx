@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { TrendingUp } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { siteConfig } from "@/lib/site-config";
 
 /**
- * Brand lockup: a gold mark (growth arrow) in a rounded tile next to the
- * wordmark. This is a clean placeholder for the official "gold bull" logo — drop
- * the real artwork into /public and swap the mark here when it is available.
+ * Brand lockup: the gold bull emblem next to the wordmark.
+ *
+ * `/logo-mark.jpeg` is the gold bull emblem cropped from the official artwork
+ * (the full logo with wordmark is at /logo.jpeg). It sits in a near-black rounded
+ * tile so the emblem's black background blends seamlessly, paired with a crisp
+ * text wordmark that stays legible at any size.
  */
 export function Logo({
   tone = "light",
@@ -26,11 +28,18 @@ export function Logo({
       className={cn("group inline-flex items-center gap-2.5", className)}
     >
       <span
-        className="flex items-center justify-center rounded-xl bg-gradient-to-br from-gold-light to-gold text-navy shadow-sm ring-1 ring-black/5"
-        style={{ width: size, height: size }}
-      >
-        <TrendingUp size={size - 16} strokeWidth={2.6} />
-      </span>
+        className="shrink-0 overflow-hidden rounded-xl bg-navy-deep ring-1 ring-gold/25"
+        style={{
+          width: size,
+          height: size,
+          backgroundImage: "url(/logo-mark.jpeg)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        role="img"
+        aria-hidden="true"
+      />
       {withWordmark && (
         <span className="leading-none">
           <span
