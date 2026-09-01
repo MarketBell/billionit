@@ -4,6 +4,7 @@ Marketing website for **Billionit Wealth** — trading education and community.
 Tagline: **Learn · Trade · Grow**. Built with Next.js (App Router) and Tailwind CSS,
 deployed on Vercel.
 
+- **Status:** Live on Vercel (deployed 1 Sep 2026).
 - **Live domain:** https://www.billionitwealth.in
 - **Repository:** https://github.com/MarketBell/billionit
 
