@@ -10,6 +10,7 @@ import {
 import { Section, SectionHeading } from "@/components/Section";
 import { GlassCard } from "@/components/GlassCard";
 import { Button } from "@/components/Button";
+import { TelegramIcon } from "@/components/TelegramIcon";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -86,6 +87,15 @@ export default function ContactPage() {
               className="text-navy/55 hover:text-gold-ink"
             >
               <Youtube size={20} />
+            </a>
+            <a
+              href={social.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${siteConfig.brand} on Telegram`}
+              className="text-navy/55 hover:text-gold-ink"
+            >
+              <TelegramIcon size={20} />
             </a>
           </div>
         </GlassCard>

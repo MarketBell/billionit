@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"
 import { siteConfig } from "@/lib/site-config";
 import { mainNav, legalNav } from "@/lib/nav";
 import { Logo } from "./Logo";
+import { TelegramIcon } from "./TelegramIcon";
 
 const { company, contact, social } = siteConfig;
 
@@ -71,6 +72,15 @@ export function Footer() {
                 className="text-white/60 hover:text-gold"
               >
                 <Youtube size={20} />
+              </a>
+              <a
+                href={social.telegram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${siteConfig.brand} on Telegram`}
+                className="text-white/60 hover:text-gold"
+              >
+                <TelegramIcon size={20} />
               </a>
             </div>
           </div>

@@ -42,6 +42,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/trading_at_biw",
     facebook: "https://www.facebook.com/share/1MKmDpuC6b/",
     youtube: "https://youtube.com/@trading_at_biw",
+    telegram: "https://t.me/Trading_at_BiW",
   },
 
   // SEBI-style risk disclaimer shown in the footer and on legal pages.
