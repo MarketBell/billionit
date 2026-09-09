@@ -119,24 +119,25 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* ── OI Intelligence (integration-ready placeholder) ──────── */}
+      {/* ── OI Intelligence ──────── */}
       <Section id="oi-intelligence" tone="dark">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
-            <Sparkles size={14} className="text-gold" />
-            Coming soon
+          <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium text-emerald-400 backdrop-blur-md">
+            <Sparkles size={14} className="text-emerald-400" />
+            Now Live
           </span>
           <h2 className="mt-6 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
             OI Intelligence platform
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white/70">
-            A powerful open-interest analytics platform is on the way — real-time
-            insights to sharpen your options and hedging decisions. It will plug
-            in right here.
+            A powerful open-interest analytics platform providing real-time
+            insights to sharpen your options and hedging decisions.
           </p>
-          <div className="mt-8 inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-4 text-sm text-white/60">
-            <LineChart size={18} className="text-gold" />
-            Integration-ready — launching with Billionit Wealth
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Button href={siteConfig.links.oiDashboard} external size="lg" className="bg-gold text-navy hover:bg-gold-light">
+              <LineChart size={18} className="mr-2" />
+              Access Dashboard
+            </Button>
           </div>
         </div>
       </Section>

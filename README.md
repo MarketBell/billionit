@@ -62,6 +62,8 @@ Almost everything is centralised — you rarely need to touch components:
 
 - **Brand, contact, address, Udyam, payment links, social links, disclaimer** →
   `lib/site-config.ts`
+- **Services:** Basic to Advance Course, Option Selling & Hedging, Algo Trading as a Service, Trading Desk.
+- **OI Intelligence:** Direct integration to the real-time open-interest analytics platform (see `Derivatives-OI-Intelligence` sister repository).
 - **The four programmes** (title, description, duration, price link vs. contact) →
   `content/services.ts`
 - **The "Why us" points** → `content/features.ts`

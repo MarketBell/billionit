@@ -45,6 +45,10 @@ export const siteConfig = {
     telegram: "https://t.me/Trading_at_BiW",
   },
 
+  links: {
+    oiDashboard: "https://oi.billionitwealth.in",
+  },
+
   // SEBI-style risk disclaimer shown in the footer and on legal pages.
   disclaimer:
     "Investments in securities are subject to market risks. Read all the related documents carefully before investing. Billionit Wealth provides education and does not offer investment advice or guarantee any returns.",

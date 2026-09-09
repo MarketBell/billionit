@@ -2,6 +2,7 @@ export const mainNav = [
   { label: "Services", href: "/#services" },
   { label: "Why us", href: "/#why-us" },
   { label: "About", href: "/#about" },
+  { label: "OI Intelligence", href: "/#oi-intelligence" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
