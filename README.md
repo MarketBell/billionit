@@ -82,9 +82,12 @@ browser-tab favicon can be added as `app/icon.png` (and `app/apple-icon.png`).
 
 ## OI Intelligence
 
-The home page includes an **integration-ready "OI Intelligence platform" section**
-(`app/page.tsx`, `#oi-intelligence`) as a placeholder. When the platform is ready,
-replace the placeholder content there with the real integration.
+The home page includes a **live "OI Intelligence platform" section** (`app/page.tsx`,
+`#oi-intelligence`) with an "Access Dashboard" button, and an "OI Intelligence" item in
+the top navigation (`lib/nav.ts`) that scrolls to that section. The button opens the live
+real-time open-interest analytics dashboard at **https://oi.billionitwealth.in**. The
+dashboard URL is centralised in `lib/site-config.ts` under `links.oiDashboard`, so it only
+needs to change in one place.
 
 ## Deploying on Vercel
 
