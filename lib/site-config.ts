@@ -46,7 +46,9 @@ export const siteConfig = {
   },
 
   links: {
-    oiDashboard: "https://oi.billionitwealth.in",
+    // OI Pulse Dashboard is now a purchased Windows app — the old hosted dashboard
+    // (oi.billionitwealth.in) has been retired; point to the on-site purchase page.
+    oiPlatform: "/oi",
   },
 
   // SEBI-style risk disclaimer shown in the footer and on legal pages.
